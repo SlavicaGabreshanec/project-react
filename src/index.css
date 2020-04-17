@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e7ebf0;
+}
+
+.container {
+  width: 1000px;
+  margin: 20px auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+.slideShow{
+    /* width: 700px;
+    height: 200px;*/
+   margin: 20px;
+
+}
+.cards-slider {
+  position: relative;
+  max-width: 226px;
+  margin: 0 auto;
+}
+.cards-slider:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 320px;
+  outline: 5px solid #ffaa3b;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cards-slider-wrapper {
+    display: flex;
+    position: absolute;
+    transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+}
+.cards-slider-wrapper .card {
+    flex: 1;
+    min-width: 200px;
+    opacity: 0.5;
+    transform: scale(0.7);
+    transition: opacity 300ms linear, transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.cards-slider.active-slide-0 #card-0 {
+    opacity: 1;
+    transform: scale(1);
+    background-color: #f3f3f3;
+    border-color: #f3f3f3;
+}
+.cards-slider.active-slide-0 #card-0 .details {
+    opacity: 1;
+}
+.cards-slider.active-slide-1 #card-1{
+    opacity: 1;
+    transform: scale(1);
+    background-color: #f3f3f3;
+    border-color: #f3f3f3;
+}
+.cards-slider.active-slide-1 #card-1 .details {
+     opacity: 1;
+ }
+.cards-slider.active-slide-2 #card-2{
+    opacity: 1;
+    transform: scale(1);
+    background-color: #f3f3f3;
+    border-color: #f3f3f3;
+}
+.cards-slider.active-slide-2 #card-2 .details {
+    opacity: 1;
+}
+.cards-slider.active-slide-3 #card-3{
+    opacity: 1;
+    transform: scale(1);
+    background-color: #f3f3f3;
+    border-color: #f3f3f3;
+}
+.cards-slider.active-slide-3 #card-3 .details {
+    opacity: 1;
+}
+.cards-slider.active-slide-4 #card-4{
+    opacity: 1;
+    transform: scale(1);
+    background-color: #f3f3f3;
+    border-color: #f3f3f3;
+}
+.cards-slider.active-slide-4 #card-4 .details {
+    opacity: 1;
+}
+.cards-slider.active-slide-5 #card-5{
+    opacity: 1;
+    transform: scale(1);
+    background-color: #f3f3f3;
+    border-color: #f3f3f3;
+}
+.cards-slider.active-slide-5 #card-5 .details {
+    opacity: 1;
+}
+.card{
+    flex: 1;
+    min-width: 200px;
+    opacity: 0.7;
+    transform: scale(0.8);
+    box-shadow: none;
+    background-color: white;
+    border-color: white;
+    transition: opacity 300ms linear, border-color 300ms linear, background-color 300ms linear,transform 300ms cubic-bezier(0.455,0.03,0.515,0.955);
+
+}
+.card .details{
+    opacity: 0;
+    transition: opacity 150ms linear;
+}
+.col {
+    height: 264px;
+    position: relative;
+}
+.col:before, .col:after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 120%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.col:after {
+    left: auto;
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);
+}
+.button {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);/*background-color: #4CAF50;  Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.buttonn {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);/*background-color: #4CAF50;  Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid darkorange;
+}
+
+.button1:hover {
+    background-color: darkorange;
+    color: white;
+}
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid darkorange;
+}
+
+.button2:hover {
+    background-color: darkorange;
+    color: white;
+}
+.sectionStyle{
+    position: center;
+    color:orange;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 0) 100%);
+}
+.card .des{
+    color: black;
+    font-style: italic;
+    font-family: "Franklin Gothic Book";
+    margin-left: 10px;
+}
+.title{
+    color: #ffaa3b;
+    font-style: italic;
+    font-family: "Franklin Gothic Book";
+    margin-left: 10px;
+    align-content: center;
+}
+.tables{
+    /* width: 700px;
+    height: 200px;*/
+    margin: 30px;
+
+}
+.slika{
+    width: 25px;
+
+}
+.naslovi{
+    color: darkorange;
+}
+.vizija{
+    color: darkorange;
+}
+.slika1{
+    width: 50%;
+}
+.stories{
+    margin: 30px;
+}
+.footer{
+    background-color: orange;
+    margin-bottom: 0px;
+    color: white;
+    height: 150px;
+
+}
+.text-f{
+    text-align: center;
+    margin-top: 50px;
+}
+.pag{
+   text-align: center;
+}
+.fg{
+    margin-top: 20px;
+    padding: 20px;
+}
+.nas{
+    text-align: center;
+}
+.divovi{
+    margin-top: 20px;
+}
+.sli{
+    margin-top: 20px;
+    margin-left: 250px;
+    width: 150px;
+}
